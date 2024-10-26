@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FDFDEB;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #000; /* Changed to black for better contrast */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #09194F; /* Updated to match hero background */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+    color: #00818A; /* Change on hover */
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #FDFDEB;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #f9ce00;
+    z-index: 0;
+    clip-path: path("M 0 300 Q 200 150 400 300 T 800 300 Q 1000 100 1200 300 L 1200 800 L 0 800 Z");
+}
+/* Content */
+.content {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.speech-bubble {
+    background-color: #09194F;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.speech-bubble.green {
+    background-color: #00818A; /* Changed the green bubble to match CTA */
+    color: white;
+}
+
+.cta-button {
+    background-color: #00818A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00063d;
+}
+
+/* Card Section */
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px; /* Space between cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+}
+/* Style for the Registration form */
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00818A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #005f5f;
+}
+.footer {
+    background-color: #09194F;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #f9ce00;
+}
